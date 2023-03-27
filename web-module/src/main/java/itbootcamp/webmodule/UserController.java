@@ -33,6 +33,7 @@ public class UserController {
             @RequestParam(value = "sortBy", defaultValue = AppConstants.DEFAULT_SORT_BY, required = false) String sortBy,
             @RequestParam(value = "sortDir", defaultValue = AppConstants.DEFAULT_SORT_DIRECTION, required = false) String sortDir
     ) {
+        log.info("Controller: getAllPageUsers");
         return userService.getAllUsers(pageNo, pageSize, sortBy, sortDir);
     }
 
