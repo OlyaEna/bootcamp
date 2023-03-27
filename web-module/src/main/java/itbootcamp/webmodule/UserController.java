@@ -23,7 +23,7 @@ public class UserController {
     public ResponseEntity<UserDto> addUser(@RequestBody UserDto userDto) {
         UserDto user = userService.addUser(userDto);
         log.info("Controller: addUser");
-        return new  ResponseEntity<>(user, HttpStatus.CREATED);
+        return new   ResponseEntity<>(user, HttpStatus.CREATED);
     }
 
     @GetMapping(path = "/all")
