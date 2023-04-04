@@ -37,6 +37,7 @@ public class UserController {
         return userService.getAllUsers(pageNo, pageSize, sortBy, sortDir);
     }
 
+
     @GetMapping(path = "/getAll")
     public List<UserDto> getAllUsers() {
         log.info("Controller: getAllUsers");
